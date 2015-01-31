@@ -17,9 +17,18 @@ html {
 	box-sizing: inherit;
 }
 
+h1 {
+  font-family: $lato;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 20px;
+  color: $charcoal;
+}
+
 
 body{
   font-family: sans-serif;
+  background-color: $cream;
   @include zero;
   // Hides close button if there is no js
   &.noscript .close-btn, 
@@ -48,9 +57,18 @@ header {
       text-align: center;
       border-bottom: 1px solid $light-grey;
       text-decoration: none;
+      font-family: $lato;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 13px;
+      line-height: 2rem;
+      color: $charcoal;
     }
     &:first-child a{
       border-top: 1px solid $light-grey;
+    }
+    &:hover{
+      background-color: $hover-cream;
     }
   } // li
 } // .navigation ul
@@ -60,11 +78,11 @@ header {
   color: $text-color;
   height: 40px;
   width: 40px; 
-  i{
+  /* i{
     border: 1px solid $light-grey;
     padding: .5em; 
   }
-  span{
+*/  span{ 
     @include hide-text;
   }
 }
