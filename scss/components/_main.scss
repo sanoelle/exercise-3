@@ -25,6 +25,7 @@ h1 {
   color: $charcoal;
   text-align: center;
   line-height: 5rem;
+  border-bottom: 1px solid $light-grey;
 }
 
 
@@ -69,8 +70,8 @@ header {
     &:first-child a{
       border-top: 1px solid $light-grey;
     }
-    &:hover{
-      background-color: $hover-cream;
+    &:hover a{
+      color: $teal;
     }
   } // li
 } // .navigation ul
@@ -145,15 +146,6 @@ header {
     display: none;
   }
 
-
- /* .navigation li{
-    float: left;
-    width: 25%;
-    display: inline-block;
-    margin-bottom: 0rem;
-    border-bottom: 0px;
-  } //.nav li*/
-
   .navigation ul{
   @include zero;
   li{
@@ -170,9 +162,12 @@ header {
     &:first-child a{
       border-top: none;
     } // first-child
+
     } // a
+  
   } // navication ul
-} // 60em
+
+} // 45em
 
 
 
