@@ -94,6 +94,12 @@ header {
   margin: 1em;
 }
 
+.image{
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+}
+
 /**
  * Sliding Navigation
  */
@@ -166,6 +172,11 @@ header {
     } // a
   
   } // navication ul
+
+  .image{
+  width: 40%;
+
+}
 
 } // 45em
 
